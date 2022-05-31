@@ -7,12 +7,12 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-		<div className={styles.container}>			
-			<h1>Homepage</h1>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officiis assumenda pariatur eos illum, sunt sequi aut atque consequuntur dolorem recusandae quia suscipit omnis laboriosam architecto! Nam quaerat dolore blanditiis.</p>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officiis assumenda pariatur eos illum, sunt sequi aut atque consequuntur dolorem recusandae quia suscipit omnis laboriosam architecto! Nam quaerat dolore blanditiis.</p>
+		<div>			
+			<h1 className={styles.title}>Homepage</h1>
+			<p className={styles.text}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officiis assumenda pariatur eos illum, sunt sequi aut atque consequuntur dolorem recusandae quia suscipit omnis laboriosam architecto! Nam quaerat dolore blanditiis.</p>
+			<p className={styles.text}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officiis assumenda pariatur eos illum, sunt sequi aut atque consequuntur dolorem recusandae quia suscipit omnis laboriosam architecto! Nam quaerat dolore blanditiis.</p>
 			<Link href="/ninjas">
-				<a>See Ninja listing</a>
+				<a className={styles.btn}>See Ninja listing</a>
 			</Link>
 		</div>
   )
