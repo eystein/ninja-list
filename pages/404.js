@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 const NotFound = () => {
+	// initialice hook, returns a router object which contains a method we can use to redirect the user.
+	// it has methods such as `go` and `push`.
 	const router = useRouter();
 
 	// Fire this function when the page first loads.
