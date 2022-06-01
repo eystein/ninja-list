@@ -1,7 +1,13 @@
+import Head from 'next/head'
+
 // Stateless functional component
 const About = () => {
 	return (
 		<>
+			<Head>
+				<title>Ninja List | About</title>
+				<meta name="keywords" content="Ninjas" />
+			</Head>
 			<h1>About</h1>
 			<p>This is my first attempt at a stateless functional component.</p>
 			<p>Or, you know, an About webpage. Booh!</p>
