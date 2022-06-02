@@ -21,9 +21,23 @@ nav {
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
 }
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+
 nav a {
   margin-left: 12px;
 }
+
+nav a:hover,
+nav a:focus {
+	text-decoration: underline;
+}
+
 nav .logo {
   margin-right: auto;
 }
@@ -45,3 +59,8 @@ footer {
 	text-decoration: underline;
 }
 
+.no-bullet {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

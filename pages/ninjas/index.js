@@ -15,13 +15,15 @@ const Ninjas = ({ ninjas }) => {
 	return ( 
 		<>
 			<h1>Ninjas list</h1>
+			<ul className='no-bullet'>
 			{ninjas.map(ninja => (
-				<div key={ninja.id}>
+				<li key={ninja.id}>
 					<h3>
-						<a className={styles.single}>{ ninja.name }</a>
+						<a href="#" className={styles.single}>{ ninja.name }</a>
 					</h3>
-				</div>
+				</li>
 			))}
+			</ul>
 		</>
 	);
 }
